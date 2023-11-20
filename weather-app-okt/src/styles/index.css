@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  animation: MovingBackground 5s infinite ease-in-out;
+  font-family: "Inter";
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+@keyframes MovingBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.location {
+  font-size: 2vw;
+}
+
+.temperature {
+  font-size: 20vw;
+  margin-left: 9.5vw;
+}
+
+.highLowTemp {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.high, .low {
+  font-size: 3vw;
+}
+
+.descrip {
+  margin: 2vw;
+  font-size: 4vw;
+  font-weight: 700;
+}
+
+.navbarContainer {
+  position: absolute;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.125);
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  padding: 1vh 2vh;
+  border-radius: 0.5rem;
+  font-size: 2vw;
+}
+
+a:hover {
+  color: white;
+  scale: 1.1;
+  background: rgba(255, 255, 255, 0.2235294118);
+}
+
+a:active {
+  color: black;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  font-size: 1vh;
+  margin: 0.5rem;
+  padding: 0;
+}
+.bottom p {
+  padding: 0;
+  margin: 0;
+}
+
+.daily {
+  margin-top: 15vh;
+}
+
+.day {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin: 1vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 1rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.252);
+}
+
+.average {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.hourly {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  top: 10vh;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-width: 3px;
+  border-color: red;
+  max-width: 100%;
+}
+
+.hour {
+  display: flex;
+  flex-direction: column;
+}
+
+.type {
+  width: 3rem;
+}
+
+.hourlyChanceRain {
+  color: #4788e3;
+}
+
+@media (max-width: 540px) {
+  .bottom {
+    left: 0;
+  }
+  a {
+    font-size: 5vw;
+  }
+}/*# sourceMappingURL=index.css.map */

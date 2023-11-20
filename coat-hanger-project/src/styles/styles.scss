@@ -1,0 +1,635 @@
+$panel-color: rgba(128, 128, 128, 0.628);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #BDDEF4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    max-width: 960px;
+    width: 100%;
+    box-shadow: 0 0 30px 10px black;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+}
+
+///////////// HEADER /////////////
+
+.header-container {
+    width: 100%;
+}
+
+.header-container img{
+    max-width: 100%;
+}
+
+
+///////////// COAT HANGER /////////////
+
+.coat-hanger-container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    pointer-events: auto;
+}
+
+.coat-hanger-top {
+    max-width: 100%;
+}
+
+.coat-hanger-top img{
+    max-width: 100%;
+    display: flex;
+}
+
+.coat-hanger {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coat-hanger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    z-index: -10;
+}
+
+///////////// SWEATER /////////////
+
+.sweater-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sweaters {
+    position: relative;
+    display: flex;
+    width: 85%;
+}
+
+.sweater {
+    user-select: none;
+    transform: translate(-1.2rem, .5rem);
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+    touch-action: none;
+}
+
+.sweater img{
+    transition: 0.1s;
+    top: 0px;
+    position: absolute;
+    width: 150%;
+    height: auto;
+    cursor: grab;
+    z-index: 10;
+}
+
+.sweater-hover img:hover {
+}
+
+
+///////////// INDIVIDUAL SWEATER /////////////
+
+.sweater0 {
+    transform: translate(4px, -5px);
+}
+
+.sweater1 {
+    transform: translate(-3px, -8px);
+}
+
+.sweater2 {
+    transform: translate(3px, -6px);
+}
+
+.sweater3 {
+    transform: translate(2px, -1px);
+}
+
+.sweater4 {
+    transform: translate(-2px, 0px);
+    scale: (1.08);
+}
+
+.sweater5 {
+    transform: translate(7px, -6px);
+}
+
+.sweater6 {
+    transform: translate(5px, 2px);
+}
+
+.sweater7 {
+    transform: translate(4px, -5px);
+}
+
+.sweater8 {
+    transform: translate(8px, -8px);
+}
+
+.sweater9 {
+    transform: translate(0px, 2px);
+}
+
+.sweater10 {
+    transform: translate(0px, 2px);
+}
+
+.sweater11 {
+    transform: translate(8px, 0px);
+}
+
+///////////// SHELVES /////////////
+
+.shelf-comp-main {
+    width: 100%;
+}
+
+.shelves-container {
+    margin: 0 2vw;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.shelf-comp {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shelf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45%;
+}
+
+.big-number {
+    user-select: none;
+    font-size: 8rem;
+    color: white;
+}
+
+.descrip {
+    user-select: none;
+    font-family: Roboto;
+    color: rgb(83, 19, 19);
+    font-weight: 700;
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.shelf-comp img{
+    transition: 0.3s;
+    width: 80%;
+}
+
+.shelf:hover {
+    scale: 1.1;
+}
+
+.shelf-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+///////////// CLOTHES /////////////
+
+.clothes-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.clothes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    bottom: -6.5rem;
+    z-index: -5;
+}
+
+.clothes img{
+    margin: -3%;
+    width: 100%;
+}
+
+///////////// BUTTON /////////////
+
+button {
+    margin: 30px;
+    background-color: red;
+    width: fit-content;
+    border-radius: 30px;
+    border: solid 4px white ;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: white;
+    border: solid 4px red;
+    scale: (1.05);
+    .big-text {
+        color: black;
+    }
+}
+
+.blue-button {
+    top: 20px;
+    position: absolute;
+    background-color: #0A4169;
+    box-shadow: 0px 5px 3px 0px black;
+    z-index: 10;
+}
+
+.blue-button:hover {
+    scale: (1.1);
+    background-color: #1a6999;
+    border: solid 4px white;
+    .big-text {
+        color: white;
+    }
+}
+
+.big-text {
+    transition: 0.1s;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    margin: 5px 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+///////////// LOADER /////////////
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #1a6999;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h3 {
+        text-align: center;
+    }
+}
+///////////// MAIN STAT /////////////
+
+.main-stat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    p {
+        font-size: 1vw;
+    }
+}
+
+.stat-main {
+    width: 100%;
+}
+
+.top-part {
+    display: flex;
+}
+///////////// DATABOX /////////////
+
+.big-number-databox {
+    user-select: none;
+    font-size: 2vw;
+    color: white;
+}
+
+.big-text-databox {
+    transition: 0.1s;
+    font-size: 2vw;
+    color: white;
+    font-weight: 700;
+    margin: 5px 30px;
+}
+
+.databox-main {
+    flex: 1;
+    margin: 0.5vw;
+    background-color: $panel-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description-databox {
+    width: 50%;
+    text-align: left;
+}
+
+.date-main {
+    margin: 0.5vw;
+    background-color: $panel-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .big-text {
+        text-align: center;
+    }
+}
+
+///////////// SCOREBOARD /////////////
+
+.scoreboard-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5vw;
+    background-color: $panel-color;
+    flex: 1;
+    height: auto;
+}
+
+.datasheet-panel {
+    margin-bottom: 5vw;
+    height: 40vw;
+}
+
+.datarow-container {
+    background-color: rgba(255, 255, 255, 0.56);
+    margin: 2px;
+}
+
+.datarow-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parcell {
+    margin: 0 0.5vw;
+}
+
+.org-name-by-user {
+    display: flex;
+    align-items: center;
+}
+
+.number-of-vote {
+    display: flex;
+    align-items: center;
+
+}
+
+.organization {
+    background-color: $panel-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 5vw;
+    margin: 2% 2%;
+    p {
+        margin: 0;
+    }
+}
+
+.button-main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 5vw;
+}
+
+.button-container {
+    bottom: 20%;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn {
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.1s;
+    align-items: center;
+}
+
+.btn:hover {
+    color: white
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pag {
+    font-size: 1vw;
+    margin: 0 0.5vw;
+}
+
+.scrbrd-dscrp {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h6 {
+        font-size: 1vw;
+        margin: 0;
+        user-select: none;
+    }
+}
+
+.pag-pages {
+    display: flex;
+    position: absolute;
+    bottom: 1vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+///////////// Column stat /////////////
+
+.column-main {
+    display: flex;
+    justify-content: center;
+    background-color: $panel-color;
+    margin: 0.5vw;
+    text-align: center;
+}
+
+.data-container {
+    display: flex;
+    justify-content: center;
+    background-color: #BDDEF4;
+    width: 95%;
+    margin: 2vw;
+}
+
+.columns {
+    display: flex;
+    align-items: flex-end;
+    h5 {
+        font-size: 0.5vw;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    background-color: rgb(18, 89, 140);
+    margin: 1vw;
+}
+
+///////////// MEDIA QUERIES /////////////
+
+
+@media (max-width: 960px) {
+    .blue-button {
+        top: 0vw;
+    }
+    .descrip {
+        font-size: 2vw;
+    }
+    .big-text {
+        font-size: 2vw;
+    }
+    .sweaters {
+        width: 85.9vw;
+    }
+    .big-number {
+        text-align: center;
+        font-size: 10vw;
+        width: 10vw;
+    }
+    .shelves-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .shelf-comp-main {
+        display: flex;
+    }
+    .shelf-container {
+        width: fit-content;
+    }
+    .shelf-comp {
+        width: 100%;
+        padding-bottom: 2rem;
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: space-around;
+    }
+    .shelf {
+        padding-top: 8vw;
+    }
+    .shelf-comp img{
+        width: 30vw;
+    }
+    .clothes img {
+        width: 15vw;
+        margin-bottom: -1vw;
+    }
+    .clothes {
+        bottom: -8.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-part {
+        flex-direction: column;
+    .datasheet-panel {
+        width: 100%;
+        height: 100%;
+    }
+    }
+    .sweater img {
+        transform: translate(.8rem, -.4rem);
+    }
+    .sweaters {
+        width: 86vw;
+    }
+    .blue-button {
+        top: 0vw
+    }
+}
+
+@media (max-width: 420px) {
+    .blue-button {
+        top: -3vw
+    }
+    .sweater img {
+        transform: translate(.9rem, -.4rem);
+    }
+}
